@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-family: "Orbitron", sans-serif;
+}
+
+body {
+  background-color: rgb(36, 32, 32);
+  color: rgb(255, 255, 255);
+}
+
+.webgl-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#title {
+  /* color: #ffff00; */
+  text-align: center;
+	position: relative;
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+    0 0 40px #ffa500, 0 0 30px #ff0000, 0 0 10px #ff8d00, 0 0 10px #ff0000;
+  color: #fff6a9;
+  padding: 20px;
+  letter-spacing: 10px;
+  z-index: 2;
+}
