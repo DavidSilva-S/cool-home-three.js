@@ -50,7 +50,6 @@ window.addEventListener('resize', () => {
   //Updata the sizes
   sizes.width = window.innerWidth,
   sizes.height = window.innerHeight
-  console.log(sizes.width, sizes.height);
   
   //Update the camera
   camera.aspect = sizes.width / sizes.height
