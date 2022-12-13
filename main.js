@@ -9,7 +9,8 @@ const scene = new THREE.Scene()
 
 //Create a sphere geometry
 const geometry = new THREE.SphereGeometry(3, 32, 16)
-const material = new THREE.MeshStandardMaterial({color: '#ffa500', shininess: 1, roughness: 0.2 })
+// const color3 = new THREE.Color("rgb(255, 0, 0)")
+const material = new THREE.MeshStandardMaterial({ color: '#e88300', roughness: 0.2 })
 const mesh = new THREE.Mesh(geometry, material)
 scene.add(mesh)
 
@@ -68,3 +69,4 @@ loop()
 const gsapAnimation = gsap.timeline({defaults: {duration: 1}})
 gsapAnimation.fromTo( mesh.scale,{z:0, x: 0, y:0},{z:1, x:1, y:1})
 gsapAnimation.fromTo( "h1",{y:"-100%"},{y:"0%"})
+
